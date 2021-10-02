@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projecto Js</title>
+    <!-- carga de JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Plugin Jquery Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.theme.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" id="theme"/>
+
+    <!-- Plugin validacion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js" integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <section class="global">
+        <header>
+            <section class="header">
+                <article class="logo">
+                    <h1>Proyecto Js</h1>
+                </article>
+                <article id="reloj"></article>
+            </section>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre Mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <section acttion="" method = "POST" class="content">
+                <article id="contacto">
+                    <h2>Contacto</h2>
+                    <form class="form_contact">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" data-validation="alphanumeric">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" id="Apellido"  name="Apellido"  data-validation="alphanumeric">
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail" name="mail" data-validation="email">
+                        <label for="sex">Sexo</label>
+                        <select name="sex" id="sex" data-validation="required">
+                            <option value="men">Hombre</option>
+                            <option value="woman">Mujer</option>
+                        </select>
+                        <label for="year">Fecha de nacimiento</label>
+                        <input type="text" id="year" name="year" data-validation="date" data-validation-format="dd-mm-yyyy">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </article>
+            </section>
+        </main>
+    </section>
+    <section class="selector-theme">
+        <div id="to-black"></div>
+        <div id="to-blue"></div>
+        <div id="to-red"></div>
+        <div id="to-green"></div>
+    </section>
+    <footer>Proyecto de JS | Hecho con amor &copy; Priscilla Rojas
+        <a href="#" class="subir">Subir</a>
+    </footer>
+
+    <!-- JQUERY UI -->
+
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script> -->
+    <script type="text/javascript" src="assets/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
